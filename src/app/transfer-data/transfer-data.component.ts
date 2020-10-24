@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input, Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-transfer-data',
@@ -9,9 +9,17 @@ export class TransferDataComponent implements OnInit {
 
 @Input() userName
 @Input() personalInfo
+@Input() arrayData
+@Output() callParent :EventEmitter <any>  =new EventEmitter()
   constructor() { }
 
   ngOnInit(): void {
+    console.log('arrayData=>>>', this.arrayData)
   }
 
+
+  onClick(){
+    this.callParent.emit('hello')
+
+  }
 }

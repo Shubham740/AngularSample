@@ -1,0 +1,13 @@
+.box{
+    background-color: skyblue;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+p{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-size: 10px;
+    display: inline-block;
+}

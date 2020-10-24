@@ -18,4 +18,24 @@ export class AppComponent {
       age:25,
       height:'6ft'
     }
+    arrayData=[{
+      name:'Shubham',
+      lastName:'Gupta'
+    },
+  
+    {
+      name:'Skand',
+      lastName:'Mishra'
+    },
+
+    {
+      name:'Bp',
+      lastName:'Upadhyay'
+    }
+
+  ]
+
+  parentComponent(data){
+    console.log('parent Data =>>>', data)
+  }
 }

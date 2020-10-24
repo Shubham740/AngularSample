@@ -1,1 +1,11 @@
-<app-transfer-data [userName]='name' [personalInfo]='personalData'  ></app-transfer-data>
+<app-transfer-data [userName]='name' [personalInfo]='personalData' [arrayData]='arrayData'  ></app-transfer-data>
+
+<div
+*ngFor='let data of arrayData'
+>
+<app-transfer-data [userName]='name' [personalInfo]='personalData' [arrayData]='data'  ></app-transfer-data>
+
+</div>
+
+<app-transfer-data [userName]='name' [personalInfo]='personalData' [arrayData]='arrayData'  (callParent)='parentComponent($event)'  ></app-transfer-data>
+
