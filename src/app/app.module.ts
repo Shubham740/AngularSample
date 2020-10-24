@@ -7,18 +7,22 @@ import {UsersModule} from './users/users.module';
 import { UserListComponent } from './user-list/user-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button'
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule
+    UsersModule,
+    BrowserAnimationsModule,
+    MatButtonModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
