@@ -8,6 +8,58 @@
 <p>{{a+b}}</p>
 <p>{{url}}</p>
 <app-user-list></app-user-list> -->
+<!-- <app-login></app-login> -->
+<!-- <app-signup></app-signup> -->
+<!-- <button (click)="getFullName(fullName)">Get My Name</button> -->
+<br />
+<app-header></app-header>
+
+<p>Header is working fine</p>
 <h1>Angular Tutorials</h1>
-<app-login></app-login>
-<app-signup></app-signup>
+
+<input type='text' #userName [value]='fullName' />
+<br /><br />
+<input type='password' #password />
+
+<br />
+<br /><br />
+
+<button *ngIf='isShowed() else elseBlock ' (click)='myEvent(password.value)'>Login </button>
+<br />
+<br />
+
+<ng-template #elseBlock>
+    <button>Signup</button>
+</ng-template>
+
+<ng-template [ngIf]='fullName.length>0'>
+    <h1>{{fullName}}</h1>
+</ng-template>
+<p  [style.color]="customColor">hello</p>
+
+ 
+
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Last Name</td>
+        <td>Age</td>
+        <td>Email</td>
+
+
+    </tr>
+    <tr *ngFor='let itemValue of nameArray'>
+        <td>{{itemValue.name}}</td>
+        <td>{{itemValue.lastName}}</td>
+        <td>{{itemValue .age}}</td>
+
+
+    </tr>
+</table>
+<br/>
+<button
+style="width: 100px; height: 30px; margin-left: 20px; background-color: red;color: green;border-radius: 10px; "
+(click)='updateColor()'
+>Update color</button>
+<app-footer></app-footer>
+<!-- <h1>pasword=>>> {{fullName}}</h1> -->
