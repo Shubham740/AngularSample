@@ -8,13 +8,15 @@ import { UserListComponent } from './user-list/user-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapSampleComponent } from './bootstrap-sample/bootstrap-sample.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BootstrapSampleComponent
   ],
   imports: [
     BrowserModule,
