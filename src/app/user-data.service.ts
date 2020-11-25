@@ -11,10 +11,12 @@ export class UserDataService {
   // tslint:disable-next-line: typedef
   getData(){
     return{
-      name:'Shubham',
-      age:25, 
-      id:1
-    }
+      name: 'Shubham',
+      age: 25,
+      id: 1,
+      completed: false,
+        address:'Noida'
+    };
   }
 
 }
