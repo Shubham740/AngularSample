@@ -8,6 +8,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CustomStyleDirective } from './custom-style.directive';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomStyleDirective } from './custom-style.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule
+    UsersModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
